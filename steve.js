@@ -45,7 +45,7 @@ client.on("ready", () => {
 client.on("message", (message) => {
   //Don't question why this is here.//////////////////////////////////////
 if(message.content === "(╯°□°）╯︵ ┻━┻"){
-let varz = Math.floor((Math.random() * 8) + 1)
+let varz = Math.floor((Math.random() * 20) + 1)
 if(varz === 1)
 return message.channel.send("┬─┬﻿ ノ( ゜-゜ノ)");
 else if(varz === 2)
@@ -62,10 +62,12 @@ else if(varz === 7)
 return message.channel.send("```JS \n if(message.content === \"(╯°□°）╯︵ ┻━┻\") { return message.channel.send(tableflipresponse); }```");
 else if (varz === 8)
 return message.channel.send("┻━┻    (  ಠ_ ಠ) I'm not going to unflip that table for you, then maybe you'll learn your lesson.");
+else
+{}
 }
 //Also don't ask why this is here//////////////////////////////////////
 if(message.content === "<@377693113642254346>"){
-  let vars = Math.floor((Math.random() * 11) + 1)
+  let vars = Math.floor((Math.random() * 15) + 1)
   if(vars === 1)
 message.channel.send("My name is Steve. You pinged my father. Prepare to die.");
 else if(vars === 2)
@@ -83,11 +85,12 @@ message.channel.send("You talking to me? Because I'm not wasting more time talki
 else if(vars === 8)
 message.channel.send("The name's Steve. Steve bond.");
 else if(vars === 9)
-message.reply(" I ping in your general direction! Your mother was a hampster, and your father smelt of elderberries!");
+message.reply(" I ping in your general direction! Your mother was a hamster, and your father smelt of elderberries!");
 else if(vars === 10)
 message.channel.send("Pings? We ain't got no pings! We don't need no pings! I don't have to show you any stinking pings!")
 else if(vars === 11)
 message.channel.send("Curiously enough, the only thing that went through code of steve of as it was pinged was *Oh no, not again.*")
+else{}
 }
 //Constants//////////////////////////////////////
   const args = message.content.slice(config.prefix.length).trim().split(' ');
